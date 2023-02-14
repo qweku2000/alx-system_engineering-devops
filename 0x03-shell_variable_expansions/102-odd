@@ -1,0 +1,10 @@
+#!/bin/bash
+
+while read line
+do
+    # Check if line number is odd
+    if [ $((LINENO%2)) -eq 1 ]
+    then
+        echo $line
+    fi
+done
