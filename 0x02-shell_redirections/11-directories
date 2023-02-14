@@ -1,2 +1,3 @@
 #!/bin/bash
-find -mindepth 1 -type d | wc -l
+count=$(find . -mindepth 1 -maxdepth 1 -type d | wc -l)
+echo "The number of directories and subdirectories in the current directory is: $count"
