@@ -1,10 +1,2 @@
 #!/bin/bash
-
-# Get the value of the BINARY environment variable
-BINARY=$BINARY
-
-# Convert the binary number to decimal using bc
-DECIMAL=$(echo "ibase=2; $BINARY" | bc)
-
-# Print the decimal number
-echo "$DECIMAL"
+echo "$((2#$BINARY))"
