@@ -1,2 +1,2 @@
 #!/bin/bash
-while read line; do echo $line; read line; done < input.txt
+cat -n | grep [13579][[:space:]] | tr -s '' | cut -f2
