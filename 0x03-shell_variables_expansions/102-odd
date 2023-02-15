@@ -1,2 +1,2 @@
 #!/bin/bash
-awk 'NR%2==1' | tr -d '\r'
+while read line; do echo $line; read line; done < input.txt
