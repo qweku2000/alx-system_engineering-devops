@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Set the input field separator to ':' to parse the /etc/passwd file correctly
 IFS=":"
